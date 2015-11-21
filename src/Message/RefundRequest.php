@@ -86,6 +86,7 @@ class RefundRequest extends AbstractRequest
 
         if ($this->getRefundApplicationFee()) {
             $data['refund_application_fee'] = "true";
+	    $data['reverse_transfer'] = "true";
         }
 
         return $data;
